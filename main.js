@@ -39,7 +39,7 @@ async function perform() {
   return perform()
 }
 
-async function main() {
+function main() {
   const iframe = document.createElement('iframe')
   iframe.width = window.innerWidth
   iframe.height = window.innerHeight
