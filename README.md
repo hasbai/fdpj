@@ -8,17 +8,13 @@
 
 ## 使用方法
 
-进入评教平台（[ce.fudan.edu.cn](http://ce.fudan.edu.cn)）—— 我的评价任务 —— 未完成页面，`F12`打开调试工具，将本仓库`main.js`中的代码复制进控制台回车运行即可。
+进入评教平台（[ce.fudan.edu.cn](http://ce.fudan.edu.cn)），`F12`打开调试工具，将本仓库`main.js`中的代码复制进控制台回车运行即可。
 
-或者在控制台中加载脚本：
+或者在控制台中输入以下命令：
 
 ```js
-document.write('<script crossorigin src="https://cdn.jsdelivr.net/gh/hasbai/fdpj/main.js"></script>')
-```
-
-<!-- ```js
-let script = document.createElement('script')
+const script = document.createElement('script')
 script.type = 'text/javascript'
-script.src = 'https://raw.githubusercontent.com/hasbai/fdpj/master/main.js'
-document.head.insertBefore(script, document.head.lastChild)
-``` -->
+script.src = 'https://cdn.jsdelivr.net/gh/hasbai/fdpj/main.js'
+document.head.appendChild(script)
+```
