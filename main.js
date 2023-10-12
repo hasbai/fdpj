@@ -27,8 +27,8 @@ async function perform() {
     nodes = dom.querySelectorAll('#subject_box dl')
   }
 
-  for (let node of nodes) {
-    node.querySelector('dd a').click()
+ for (var i = 1; i < nodes.length; ++i) {
+    nodes[i].querySelector('dd a').click()
   }
   dom.getElementById('next_button').click()
   await sleep()
