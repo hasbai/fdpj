@@ -18,3 +18,12 @@ script.type = 'text/javascript'
 script.src = 'https://cdn.jsdelivr.net/gh/hasbai/fdpj/main.js'
 document.head.appendChild(script)
 ```
+
+自用版本：
+
+```js
+let nodes = document.querySelectorAll('#subject_box dl')
+for (var i = 0; i < nodes.length; ++i) {
+    nodes[i].querySelector('dd a').click()
+}
+```
