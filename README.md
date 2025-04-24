@@ -18,3 +18,15 @@ script.type = 'text/javascript'
 script.src = 'https://cdn.jsdelivr.net/gh/hasbai/fdpj/main.js'
 document.head.appendChild(script)
 ```
+
+## 手动版本（不会自动点击提交）
+
+进入评教平台的问卷页面，按`F12`打开调试工具，在控制台中输入以下命令：
+
+```js
+let nodes = document.querySelectorAll('#subject_box dl')
+for (var i = 0; i < nodes.length; ++i) {
+    nodes[i].querySelector('dd a').click()
+}
+document.querySelector('#next_button').scrollIntoView(true)
+```
