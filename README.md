@@ -19,11 +19,14 @@ script.src = 'https://cdn.jsdelivr.net/gh/hasbai/fdpj/main.js'
 document.head.appendChild(script)
 ```
 
-自用版本：
+## 手动版本（不会自动点击提交）
+
+在控制台中输入以下命令：
 
 ```js
 let nodes = document.querySelectorAll('#subject_box dl')
 for (var i = 0; i < nodes.length; ++i) {
     nodes[i].querySelector('dd a').click()
 }
+document.querySelector('#next_button').scrollIntoView(true)
 ```
